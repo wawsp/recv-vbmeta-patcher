@@ -1,9 +1,8 @@
-## Patch your Samsung Recovery and VBMeta images
-This is a combo version of patching Samsung recovery image with fastbootd (https://github.com/Johx22/Patch-Recovery) and patching vbmeta (https://github.com/cd-Crypton/vbmeta-action-patcher) utilizing GitHub Workflows infra. All binaries are coming from those repos.
+# 修补你的三星 Recovery 和 VBMeta 镜像
 
-## Guide
-* Fork this repository.
-* Upload your vbmeta.img.lz4 and recovery.img.lz4 to the forked repo.
-* Go to `Action` tab, then execute the workflow.
-* You'll find patched recovery with fastbootd and vbmeta in correspoding artifacts section of the workflow run in a single file called miniAP.tar.md5.
-* Simply flash that archive with patched Odin to AP section.
+# 操作指南
+1.Fork 本仓库。
+2.将你的 vbmeta.img.lz4 和 recovery.img.lz4 上传到 fork 后的仓库中。
+3.进入“Action”选项卡，然后执行工作流程。
+4.执行成功后，会生成patched-recovery-and-vbmeta.zip的文件，解压后，会有miniAP.tar.md5，其中包含已修补的带 fastbootd 的 recovery 和 vbmeta。
+只需使用Odin将已修补文件刷入AP即可。
